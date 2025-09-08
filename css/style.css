@@ -32,11 +32,12 @@ a:hover{
    display: flex;
 }
 .navlist li{
+    margin-right: 0 1.5rem;
     color: (6, 37, 64, 0.5);
-    font-size: 1.125rem;
-    letter-spacing: 4px;
-    margin:1vw;
-    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0px;
+    margin:2vw;
+    
 }
 button{
     align-items: center;
