@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    text-decoration: none;
+
+}
+a{
+    color: #06254080;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    width:100% ;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    z-index: 1000;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover{
+    opacity: 0.4;
+}
+.logo-caiq{
+    width: 12rem;
+    height: 2.5rem;
+}
+.navlist{
+   list-style: none;
+   display: flex;
+}
+.navlist li{
+    color: (6, 37, 64, 0.5);
+    font-size: 1.125rem;
+    letter-spacing: 4px;
+    margin:1vw;
+    font-weight: bold;
+}
+button{
+    align-items: center;
+    width: 175px;
+    height: 51px;
+    background-color: rgba(6, 37, 64, 1);
+    border-radius: 8px;
+    color: rgba(0, 183, 189, 1);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
