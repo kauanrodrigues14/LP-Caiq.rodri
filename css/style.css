@@ -31,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 12vh;
     background: white;
     font-family: 'Lato', sans-serif;
 }
@@ -117,7 +117,7 @@ a:hover{
     border: none;
 }
 .btn-cv{
-     align-items: center;
+    align-items: center;
     width: 175px;
     height: 51px;
     background-color: white;
@@ -179,12 +179,12 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-.services-div h2{
+.services-div h2, .about-div h2{
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: medium;
 }
-.services-div h3{
+.services-div h3, .about-div h3{
     font-size: 48px;
     line-height: 70px;
     margin-bottom: 30px;   
@@ -227,4 +227,90 @@ a:hover{
     margin-bottom: 25px;
     width: 100px;
     height: 100px;
+}
+.about{
+    padding-top: 400px;
+    background-color: white;
+    width: 100%;
+    height: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-div{
+    width: 1280px;
+    height:760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-content{
+    width: 1300px;
+    height:810px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 200px;
+   
+}
+.about-img{
+    grid-column: 1;
+    grid-row: 1 ;
+    margin-left: -200px;
+    
+}
+.about-text{
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+    margin-top: 300px;
+    line-height: 30px;
+    margin-inline: -10px;
+}
+.about-text p{
+    font-size: 18px;
+
+}
+.about-content button{
+    margin-top: 50px;
+
+}
+.about-knowledge{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 240px;
+    justify-content: space-around;
+    margin-top: 250px;
+}
+.know-box{
+    width: 200px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.know-box h3{
+    font-size: 32px;
+    margin-bottom: -5px;
+}
+.know-box p{
+    font-size: 20px;
+    font-weight: bold;
+ 
+}
+.know-box img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+.profile {
+    opacity: 0;
 }
