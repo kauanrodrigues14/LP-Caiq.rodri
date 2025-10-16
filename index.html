@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <script src="js/script.js"></script>
     <title>Caiq.rodri</title>
 </head>
 <header>
@@ -16,7 +18,7 @@
             <li><a href="#profile">Portfólio</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
-        <button class="contact-button">Fale Comigo</button>
+        <button class="contact-button" href="#contact">Fale Comigo</button>
     </nav>
 </header>
 <!-- Barra de Navegação -->
@@ -178,14 +180,74 @@
                 <button class="hud-button">Design Gráfico</button>
                 <button class="hud-button">Social Media</button>
             </div>
-            <div class="profile-container">
-                <div class="containers">
+            <div class="profile-containers">
+                <div class="container">
                     <img src="drawable/portfolio/port1.png" class="profile-icon">
-
-            </div>
-        </div>
-
+                     <div class="overlay"></div>
+                    <div class="layer">
+                        <span> Nome Projeto</span>
+                        <h4>Categoria</h4>
+                    </div>
+                </div>
+                <div class="container">
+                  
+                    <img src="drawable/portfolio/port1.png" class="profile-icon">
+                     <div class="overlay"></div>
+                   
+                    <div class="layer">
+                        <span> Nome Projeto</span>
+                        <span>Categoria</span>
+                    </div>
+                </div>
+                <div class="container">
+                    
+                    <img src="drawable/portfolio/port1.png" class="profile-icon">
+                     <div class="overlay"></div>
+                    <div class="layer">
+                        <span>Nome Projeto</span>
+                        <h4>Categoria</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="drawable/portfolio/port1.png" class="profile-icon">
+                     <div class="overlay"></div>
+                    <div class="layer">
+                        <span> Nome Projeto</span>
+                        <h4>Categoria</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="profile-box-image">
+                    <img src="drawable/portfolio/port1.png" class="profile-icon">
+                    <div class="overlay"></div>
+                    </div>
+                    <div class="layer">
+                        <span> Nome Projeto</span>
+                        <h4>Categoria</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="drawable/portfolio/port1.png" class="profile-icon">
+                     <div class="overlay"></div>
+                    <div class="layer">
+                        <span> Nome Projeto</span>
+                        <h4>Categoria</h4>
+                    </div>
+                </div>
     </section>
+    <section class="contact" id="contact">
+        <div class="contact-div">
+            <h1>Contato</h1>
+            <h2>Conecte-se comigo: estou aberto a novas ideias, projetos e oportunidades</h2>
+          <form id="form" class="contact-form" onsubmit="sendMessage(event)">
+            <div class="contact-group">
+            <input type="text" class="input-field" placeholder="Nome" id="name">
+            </div>
+            <div class="contact-group">
+            <textarea class="input-field" placeholder="Mensagem" id="message"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar Mensagem</button>
+        </div>
 </body>
 
 </html>
