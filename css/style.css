@@ -7,9 +7,11 @@
 section{
     width: 100%;
     display: flex;
-    min-height: 780px;
+    min-height: 380px;
     margin-bottom: 150px;
     justify-content: center;
+
+
 
 }
 :root{
@@ -17,8 +19,10 @@ section{
     --subtitle-color: rgba(27, 54, 93, 1);
     --text-color: #06254080;
     --background-transparent:#06254020;
+    --background-footer: rgba(27, 54, 93, 0.5);
     --font-sora: 'Sora', sans-serif;
     --font-lato: 'Lato', sans-serif;
+    --margin-none: margin: 0px;
     
 }
 
@@ -64,6 +68,20 @@ button{
     font-weight: medium;
     border: none;
     font-family: var(--font-lato);
+
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 5px var(--title-color);
+        }
+    
+}
+
+span{
+    font-family: var(--font-lato);
+}
+.logo-caiq{
+    width: 12rem;
+    height: 2.5rem;
 }
 .contact-button{
     background-color: var(--subtitle-color);
@@ -164,6 +182,11 @@ nav{
     display: flex;
     gap: 40px;
     margin-top: 70px;
+
+    & img:hover{
+        opacity: 0.5;
+
+    }
 }
 
 
@@ -177,6 +200,7 @@ nav{
     align-items: center; 
     padding: 20px;
     justify-content: space-around;
+    
 }
 .xperience-box{
     display: flex;
@@ -201,6 +225,7 @@ nav{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     gap: 60px;
+    
 
 }
 .services-box{
@@ -214,8 +239,19 @@ nav{
     align-items: center;
     border-radius: 12px;
     padding: 50px;
-    transition: transform 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    
 }
+.services-box.show{
+    visibility: visible;
+    opacity: 1;
+    animation: appearTop 2.5s ease forwards;
+    animation-fill-mode: both;
+}
+
+
 
 .about-div{
     display: flex;
@@ -324,7 +360,9 @@ nav{
     font-size: 14px;
 
 }
+
 .contact-div{
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -356,5 +394,39 @@ nav{
     color: var(--title-color);
     margin: 10px 250px;
 }
-
-
+.footer{
+    margin: 0;
+    background-color: var(--background-footer);
+}
+.footer-div{
+    padding: 50px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    gap: 10px;
+}
+.contact-info-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+#contact-span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--subtitle-color);
+}
+.line-footer{
+    height: fit-content;
+    border-top:solid 1px var(--subtitle-color);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 30px;
+}
